@@ -1,0 +1,50 @@
+.tabs {
+  list-style: none;
+  display: flex;
+  white-space: nowrap;
+  grid-gap: 10px;
+  padding: 1rem;
+  overflow: hidden;
+  padding: 20px 40px;
+}
+.section {
+  background-color: #fff;
+  max-width: 600px;
+  overflow-x: hidden;
+  width: 97%;
+  position: relative;
+}
+.tab {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.tab:hover {
+  background-color: rgb(255, 0, 255);
+  color: hsl(0, 0%, 100%);
+}
+.icon {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: green;
+  font-weight: bolder;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.icon:first-child {
+  left: 0px;
+  position: absolute;
+  background-image: linear-gradient(to right, red, #fff);
+}
+.icon:last-child {
+  position: absolute;
+  right: 0px;
+  top: 0%;
+  background-image: linear-gradient(to right, #fff, red);
+}
