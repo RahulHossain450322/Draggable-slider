@@ -11,16 +11,16 @@ function App() {
     const tabs = document.querySelector('.tabs')
     tabs.scrollLeft -= e.movementX;
   }
-  const down=()=>{
+  const start=()=>{
     setToggle(true)
   }
-  const up=()=>{
+  const end=()=>{
     setToggle(false)
   }
   return (
     <section className='section'>
       <div className='left-icon icon'>L</div>
-      <ul onMouseUp={up} onMouseDown={down} onMouseMove={move} className='tabs'>
+      <ul onTouchEnd={end} onTouchStart={start} onTouchMove={move} className='tabs'>
         <li className='tab'>About</li>
         <li className='tab'>Ball</li>
         <li className='tab'>Cat</li>
